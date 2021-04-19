@@ -1,0 +1,157 @@
+<li class='c-tags-list__item mega-menu-parent'>
+    <a href='javascript.void(0)'
+        class='c-tags-list__link'>
+        <mark> All topics 🔥</mark>
+        {{> down-arrow}}
+    </a>
+    <div class="mega-menu">
+        <div class="mega-latest-posts">
+            <div class="l-wrapper in-submenu">
+                <section class="m-tags">
+                    <h3 class="m-submenu-title">CORE TOPICS</h3> <br>
+                    <ul>
+                        {{#get 'tags' filter='slug:[hedge-funds]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[moguls]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[kompromat]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[money-managers]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[hnw-shops]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[family-offices]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        
+                    </ul>
+                </section>
+                <section class="m-tags">
+                    <h3 class="m-submenu-title">NICHES</h3><br>
+                    <ul>
+                        {{#get 'tags' filter='slug:[fintech]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        
+                        {{#get 'tags' filter='slug:[tech-vc]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[private-equity]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[alternatives]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[real-estate]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[pension-funds]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                    </ul>
+                </section>
+                <section class="m-tags">
+                    <h3 class="m-submenu-title">THE REST</h3> <br>
+                    <ul>
+                        {{#get 'tags' filter='slug:[nobull-klev]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[strategy]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[memba-him]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[marketing]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[second-mouse-plan]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[opmflix]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        
+                    </ul>
+                </section>
+                <section class="m-tags">
+                    <h3 class="m-submenu-title">BY CITY</h3> <br>
+                    <ul>
+                        {{#get 'tags' filter='slug:[toronto]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[montreal]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[vancouver]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[calgary]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        {{#get 'tags' filter='slug:[winnipeg]'}}
+                            {{#foreach tags}}
+                                <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                        
+                         {{#get 'tags' filter='slug:[ottawa]'}}
+                         {{#foreach tags}}
+                              <li><a href='{{ url }}'>{{ name }}</a></li>
+                            {{/foreach}}
+                        {{/get}}
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</li>

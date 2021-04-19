@@ -1,0 +1,14 @@
+<nav class="pagination" role="navigation">
+    <ul class="pagination">
+        {{#if prev}}
+            <li class="page-item disabled"> <a class="page-link" href="#" tabindex="-1">Prev</a> </li>
+        {{/if}}
+        <li class="page-item"><a class="page-link" href="{{page}}">{{pages}}</a></li>
+        {{#if next}}
+            <li class="page-item"> <a class="page-link" href="#">Next</a> </li>
+        {{/if}}
+    </ul>
+</nav>
+
+
+

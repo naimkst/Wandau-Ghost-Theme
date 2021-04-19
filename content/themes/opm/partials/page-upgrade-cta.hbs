@@ -1,0 +1,10 @@
+<aside class='c-post-upgrade-cta'>
+  {{#if @member}}
+    <h4 class='c-post-upgrade-cta__title'>{{t 'This page is for paying subscribers only. Sad!'}}</h4>
+  {{else}}
+    <h4 class='c-post-upgrade-cta__title'>{{t 'This page is for subscribers only. Sad! You can register for free just with your email. '}}</h4>
+  {{/if}}
+
+  <a class='c-btn c-btn--action u-mb-16' href='/subscribe/'>{{t 'Subscribe Now'}}</a>
+  <p class='u-type-xs'>{{t 'Already have an account?'}} <a href='/signin/' class='u-link'>{{t 'Log in'}}</a></p>
+</aside>

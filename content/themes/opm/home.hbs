@@ -1,0 +1,49 @@
+{{!< default}}
+
+{{#page}}
+
+<article class='c-{{ post_class }}'>
+  {{> post-header }}
+
+  <section class='c-content'>
+    {{ content }}
+  </section>
+</article>
+
+
+
+
+ <section class='c-content'>
+    
+ <h2>
+ {{#if @labs.members}}
+      {{#unless @member}}
+        
+        <h2 id="1-subscribe-for-free-if-you-haven-t-already-">1) Subscribe for free: </h2>
+        <p></p><br>
+          <section class='c-subscribe c-subscribe--center'>
+            <h3 class='u-type-500 u-mb-8'>{{t '{siteTitle} Newsletter' siteTitle=@site.title}}</h3>
+            <p class='u-type-500 u-mb-16'>{{t 'Sign up to read posts and to receive the latest updates in your inbox.' }}</p>
+            {{> subscribe-form inputLabel='subscribe-email-post' formClass='c-subscribe-form--compact'}}
+          </section>
+          <p></p><h2 id="2">2) Click on the confirmation link you will get by email to login.</h2><br>
+          <h2 id="3">3) Use the topics menu above to explore the blog.</h2>
+        
+      {{else}}
+       <h2 id="4">👆 Use the topics menu above to explore the blog.</h2>
+  
+        
+        
+        
+      {{/unless}}
+      
+    {{/if}}
+    
+
+ {{/page}}
+ </h2> 
+    
+  </section>
+ 
+ 
+ 

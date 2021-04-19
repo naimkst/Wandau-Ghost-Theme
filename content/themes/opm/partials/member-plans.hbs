@@ -1,0 +1,56 @@
+<div class='c-member-plans'>
+  {{#unless @member}}
+    <div class='c-member-plan c-member-plan--free'>
+      <header class='c-member-plan__header'>
+        <h2 class='c-member-plan__title'>{{t 'Frog-Kissing'}}<br>{{t 'Blind Squirrel'}} </h2>
+        <strong class='c-member-plan__amount'>FREE!</strong>
+      </header>
+      <div class='c-member-plan__content'>
+        <ul class='c-member-plan__list'>
+          <li>Open to anyone, including total squares</li>
+          <li>You will get email updates on a delayed basis</li>
+          <li>Access to most posts</li>
+          <li>Everyone will laugh at you</li>
+        </ul>
+        <a class='c-btn c-btn--dark' href='/opmwire/signup/'>{{t 'Choose this plan'}}</a>
+      </div>
+    </div>
+  {{/unless}}
+
+  <div class='c-member-plan c-member-plan--premium'>
+    <header class='c-member-plan__header'>
+      <h2 class='c-member-plan__title'>{{t 'Self-Aware'}}<br>{{t 'Barefoot Pilgrim'}}</h2>
+      <span class='c-member-plan__sign'>{{ @price.currency_symbol }}</span>
+      <strong class='c-member-plan__amount'>{{ @price.monthly }}</strong>
+    </header>
+    <div class='c-member-plan__content'>
+      <ul class='c-member-plan__list'>
+        <li>$10 PER MONTH</li>
+        <li>Full access to all private posts</li>
+        <li>Excel jockeys tolerated, but no total squares</li>
+        <li>Yes, "barefoot pilgrim" is pejorative</li>
+        <li>Get email updates earlier</li>
+      </ul>
+      <a class='c-btn c-btn--dark' href='javascript:void(0)' data-members-plan='Monthly'>{{t 'Choose this plan'}}</a>
+    </div>
+  </div>
+
+  <div class='c-member-plan c-member-plan--premium'>
+    <header class='c-member-plan__header'>
+      <h2 class='c-member-plan__title'>{{t 'Super Premium'}}<br>{{t 'Wheeler-Dealer'}}</h2>
+      <span class='c-member-plan__sign'>{{ @price.currency_symbol }}</span>
+      <strong class='c-member-plan__amount'>{{ @price.yearly }}</strong>
+    </header>
+    <div class='c-member-plan__content'>
+      <ul class='c-member-plan__list'>
+        <li>$1,000 PER YEAR</li>
+        <li>Emails sent by premium service (not low-status Mailchimp)</li>
+                <li>Cannot be held concurrently with a CFA Charter</li>
+        <li>Can use CFBF instead (Chartered Financial Bullcrap Fighter)</li>
+        <li>Other undisclosed benefits</li>
+        
+      </ul>
+      <a class='c-btn c-btn--dark' href='javascript:void(0)' data-members-plan='Yearly'>{{t 'Choose this plan'}}</a>
+    </div>
+  </div>
+</div>
